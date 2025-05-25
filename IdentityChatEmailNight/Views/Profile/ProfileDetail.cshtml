@@ -1,0 +1,56 @@
+﻿@model ProfileEditViewModel
+@{
+    ViewData["Title"] = "ProfileDetail";
+    Layout = "~/Views/Shared/_MessageLayout.cshtml";
+}
+<div class="container-fluid" style="background-color: #e3f2fd; min-height: 100vh; padding-top: 40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h4 class="mb-2">Bahtiyar Artuç</h4>
+                    <p class="text-muted">Mesajlar Detayları</p>
+                    <div class="d-flex justify-content-between mt-3 mb-3">
+                        <div>
+                            <h5 class="mb-0">2</h5>
+                            <small>Alınan</small>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">1</h5>
+                            <small>Gönderilen</small>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Bilgilerim</h6>
+                        <p>bahtiyar@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="col-md-8">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="mb-4">Profil Bilgilerini Güncelle</h5>
+                    <form>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" placeholder="Ad" value="Bahtiyar" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" placeholder="Soyad" value="Artuç" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" placeholder="Kullanıcı Adı" value="bahtiyar" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email" value="bahtiyar@gmail.com" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="password" class="form-control" placeholder="Yeni Şifre" />
+                        </div>
+                        <button class="btn btn-dark w-100" type="submit">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
